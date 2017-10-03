@@ -17,7 +17,8 @@ ActiveRecord::Schema.define(version: 20170930204008) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.string "trailer_url"
+    t.string "youtube_key"
+    t.text "raw_JSON"
   end
 
   create_table "notes", force: :cascade do |t|
