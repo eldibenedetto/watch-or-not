@@ -3,7 +3,7 @@ class CreateUserMovies < ActiveRecord::Migration[5.1]
     create_table :user_movies do |t|
       t.integer :user_id
       t.integer :movie_id
-      t.boolean :approved, :default => false
+      t.integer :approved, :default => 2
     end
   end
 end

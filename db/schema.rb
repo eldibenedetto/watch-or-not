@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20171003184940) do
   create_table "user_movies", force: :cascade do |t|
     t.integer "user_id"
     t.integer "movie_id"
-    t.boolean "approved", default: false
+    t.integer "approved", default: 2
   end
 
   create_table "users", force: :cascade do |t|
