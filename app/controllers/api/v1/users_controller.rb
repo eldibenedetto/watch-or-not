@@ -7,7 +7,7 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    render json: @user, status: 201
+    render json: @user, include: [:movies], status: 201
   end
 
   def show
