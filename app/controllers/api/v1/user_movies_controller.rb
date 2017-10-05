@@ -7,7 +7,7 @@ class Api::V1::UserMoviesController < ApplicationController
 
   def create
     @user_movie = UserMovie.create(user_movie_params)
-    render json: @user, status: 201
+    render json: @user_movie.movie, status: 201
   end
 
   def show
