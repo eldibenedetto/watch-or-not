@@ -9,7 +9,7 @@ gem 'rest-client'
 
 gem 'pry'
 
-
+gem "figaro"
 
 gem 'active_model_serializers', '~> 0.10.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
